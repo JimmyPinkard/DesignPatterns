@@ -1,27 +1,29 @@
 import java.util.ArrayList;
 
-public class BubbleSort implements SortBehavior
-{
+/**
+ * Bubble sort SortBehaviour
+ */
+public class BubbleSort implements SortBehavior {
+    /**
+     * Bubble sort implementation
+     * @param data sorts the data using bubble sort
+     * @return the sorted list
+     */
     @Override
-    public ArrayList<String> sort(final ArrayList<String> data)
-    {
-        ArrayList<String> list = new ArrayList<>(data);
+    public ArrayList<String> sort(final ArrayList<String> data) {
         boolean hasSwapped;
-        do
-        {
+        do {
             hasSwapped = false;
-            for(int i = 0; i < list.size() - 1; ++i)
-            {
-                final String temp = list.get(i);
-                if(list.get(i).compareTo(list.get(i + 1)) > 0)
-                {
-                    list.set(i, list.get(i + 1));
-                    list.set(i + 1, temp);
+            for(int i = 0; i < data.size() - 1; ++i) {
+                final String temp = data.get(i);
+                if(data.get(i).compareTo(data.get(i + 1)) > 0) {
+                    data.set(i, data.get(i + 1));
+                    data.set(i + 1, temp);
                     hasSwapped = true;
                 }
             }
         }
         while(hasSwapped);
-        return list;
+        return data;
     }
 }
