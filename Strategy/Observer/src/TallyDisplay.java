@@ -1,9 +1,10 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class TallyDisplay implements Observer {
 
-    private Subject subject;
-    private HashMap<String, Integer> votes;
+    private final Subject subject;
+    private final HashMap<String, Integer> votes;
 
     public TallyDisplay(final Subject subject) {
         this.subject = subject;
@@ -12,11 +13,17 @@ public class TallyDisplay implements Observer {
 
     @Override
     public void update(HashMap<String, Integer> votes) {
-        // TODO Auto-generated method stub
-        this.votes.putAll(votes);
+        for(final Map.Entry<String, Integer> entry : votes.entrySet()) {
+            this.votes.merge(entry.getKey(), entry.getValue(), Integer::sum);
+        }
+        display();
     }
 
-    public void display() {
+    private void display() {
         //TODO place holder
+        System.out.println("Current Tallies:");
+        for(final Map.Entry<String, Integer> entry : this.votes.entrySet()) {
+            System.out.printf("%s: %d\n", entry.getKey(), entry.getValue());
+        }
     }    
 }

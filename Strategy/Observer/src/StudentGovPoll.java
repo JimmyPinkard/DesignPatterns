@@ -11,6 +11,8 @@ public class StudentGovPoll implements Subject {
     public StudentGovPoll(final String school) {
         this.school = school;
         this.observers = new ArrayList<>();
+        this.observers.add(new TallyDisplay(this));
+        this.observers.add(new PercentageDisplay(this));
         this.votes = new HashMap<>();
         this.numUpdates = 0;
     }
@@ -31,15 +33,21 @@ public class StudentGovPoll implements Subject {
     public void notifyObserver(Observer observer) {
         // TODO Auto-generated method stub
         observer.update(this.votes);
-        ++numUpdates;
     }
 
-    public void addCandidate(String president) {
+    public void addCandidate(final String president) {
         this.votes.put(president, 0);
     }
 
-    public void enterVotes(String president, int num) {
-        this.votes.put(president, num);
+    public void enterVotes(final String president, final int num) {
+        this.votes.merge(president, num, Integer::sum);
+        ++numUpdates;
+        if(numUpdates % 4 == 0) {
+            for(final Observer observer : observers) {
+                System.out.println();
+                notifyObserver(observer);
+            }
+        }
     }
 
     public String getSchool() {
