@@ -1,6 +1,6 @@
-.idea
+.idea/
 *.iml
 */*.iml
-out
+out/
 Strategy/Sorting/Sorting.iml
-.code
+CSCE247-Group/

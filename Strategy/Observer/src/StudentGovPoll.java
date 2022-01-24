@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * Class for Student Government Poll
+ */
 public class StudentGovPoll implements Subject {
 
     private String school;
@@ -8,6 +11,10 @@ public class StudentGovPoll implements Subject {
     private HashMap<String, Integer> votes;
     private int numUpdates;
 
+    /**
+     * Constructor for StudentGovPoll
+     * @param school
+     */
     public StudentGovPoll(final String school) {
         this.school = school;
         this.observers = new ArrayList<>();
@@ -17,28 +24,45 @@ public class StudentGovPoll implements Subject {
         this.numUpdates = 0;
     }
 
+    /**
+     * @param observer
+     */
     @Override
     public void registerObserver(Observer observer) {
         // TODO Auto-generated method stub
         this.observers.add(observer);
     }
 
+    /**
+     *
+     * @param observer
+     */
     @Override
     public void removeObserver(Observer observer) {
-        // TODO Auto-generated method stub
         this.observers.remove(observer);
     }
 
+    /**
+     *
+     * @param observer
+     */
     @Override
     public void notifyObserver(Observer observer) {
-        // TODO Auto-generated method stub
         observer.update(this.votes);
     }
 
+    /**
+     *
+     * @param president
+     */
     public void addCandidate(final String president) {
         this.votes.put(president, 0);
     }
 
+    /**
+     * @param president
+     * @param num
+     */
     public void enterVotes(final String president, final int num) {
         this.votes.merge(president, num, Integer::sum);
         ++numUpdates;
@@ -50,6 +74,9 @@ public class StudentGovPoll implements Subject {
         }
     }
 
+    /**
+     * @return school
+     */
     public String getSchool() {
         return school;
     }

@@ -1,4 +1,11 @@
+/**
+ * Interface for followers of a poll
+ */
 public interface Observer
 {
-    public void update(final java.util.HashMap<String, Integer> votes);
+    /**
+     * Updates that instance of the Observer
+     * @param votes
+     */
+    void update(final java.util.HashMap<String, Integer> votes);
 }
