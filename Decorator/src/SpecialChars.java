@@ -47,6 +47,6 @@ public class SpecialChars extends PasswordDecorator
                 ++length;
             }
         }
-        return password;
+        return builder.toString();
     }
 }
