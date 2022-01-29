@@ -6,6 +6,20 @@ import java.util.Map;
  */
 public class SpecialChars extends PasswordDecorator
 {
+    //We don't need it for every instance
+    private static final int capacity = 7;
+    private static final Map<Integer, Character> specialChars = new HashMap<>(capacity);
+    static
+    {
+        specialChars.put(0, '*');
+        specialChars.put(1, '!');
+        specialChars.put(2, '%');
+        specialChars.put(3, '+');
+        specialChars.put(4, '.');
+        specialChars.put(5, '{');
+        specialChars.put(6, '}');
+    }
+
     /**
      *
      * @param passwordBeginning The previous password instance
@@ -13,30 +27,26 @@ public class SpecialChars extends PasswordDecorator
     public SpecialChars(final Password passwordBeginning)
     {
         super(passwordBeginning);
+    }
+
+    /**
+     *
+     * @return copy of the string with special characters added 30% of the time
+     */
+    @Override
+    public String getPassword()
+    {
         StringBuilder builder = new StringBuilder(password);
         int length = builder.length();
         java.util.Random random = new java.util.Random(length);
-        final Map<Integer, Character> map = new HashMap<>();
-        map.put(0, '*');
-        map.put(1, '!');
-        map.put(2, '%');
-        map.put(3, '+');
-        map.put(4, '.');
-        map.put(5, '{');
-        map.put(6, '}');
         for(int i = 0; i < length; ++i)
         {
             if(random.nextInt(10) < 3)
             {
-                builder.insert(i, map.get(random.nextInt(map.size())));
+                builder.insert(i, specialChars.get(random.nextInt(capacity)));
                 ++length;
             }
         }
-    }
-
-    @Override
-    public String getPassword()
-    {
         return password;
     }
 }

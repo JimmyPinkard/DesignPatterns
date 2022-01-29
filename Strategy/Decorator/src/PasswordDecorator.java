@@ -1,3 +1,6 @@
+/**
+ * Decorator for password
+ */
 public abstract class PasswordDecorator extends Password
 {
     protected Password passwordBeginning;
@@ -7,5 +10,9 @@ public abstract class PasswordDecorator extends Password
         this.password = passwordBeginning.getPassword();
     }
 
+    /**
+     * Implemented by children
+     * @return
+     */
     public abstract String getPassword();
 }
