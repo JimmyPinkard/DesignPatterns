@@ -1,0 +1,39 @@
+Welcome to our car store
+
+Creating a Ford Fiesta
+Adding a small frame
+Adding the Wheels
+Adding a Standard Engine
+Adding Windows
+Accessories: 
+- FLOOR_MATTS
+- PHONE_CHARGER
+
+Creating a Nissan Altima
+Adding a three part frame
+Adding the Wheels
+Adding a Standard Engine
+Adding Windows
+Accessories: 
+- FLOOR_MATTS
+- PHONE_CHARGER
+- BACK_UP_CAMERA
+- EXTRA_CUP_HOLDERS
+- HEATED_SEATS
+
+Creating a Mercedes GT
+Adding a beautiful frame
+Adding the Wheels
+Adding a Supped Up Engine
+Adding Windows
+Accessories: 
+- FLOOR_MATTS
+- PHONE_CHARGER
+- BACK_UP_CAMERA
+- EXTRA_CUP_HOLDERS
+- HEATED_SEATS
+- SPORT_SEATS
+- WINDOW_TINT
+- HIGH_END_SOUND
+- TRUNK_ORGANIZER
+- BLUE_TOOTH
