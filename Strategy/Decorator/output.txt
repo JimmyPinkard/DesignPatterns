@@ -1,0 +1,7 @@
+Welcome to our password generator program
+Enter a phrase: 
+this is the best day ever!
+A good password for you may be: thisisthebestdayever!37
+A stronger password for you may be: 7h!$!$7h383$7d@y3v3r!37
+An even stronger password for you may be: 7h!$!$7h383$7D@y3V3R!37
+An even even stronger password for you may be: 7+h!*${!{$7h383$.7d@Y3v3R!3!7
