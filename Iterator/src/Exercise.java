@@ -54,7 +54,8 @@ public class Exercise
      * @return string version of object
      */
     @Override
-    public String toString() {
+    public String toString()
+    {
         StringBuilder builder = new StringBuilder();
         builder.append("... ").append(title).append(" ...\n").append("Muscles: ");
         for(final String muscle : targetMuscles)

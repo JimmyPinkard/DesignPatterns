@@ -1,3 +1,6 @@
+/**
+ * Interface to iterate through a collection such as an array
+ */
 public interface Iterator
 {
     /**

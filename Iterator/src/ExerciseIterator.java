@@ -21,7 +21,8 @@ public class ExerciseIterator implements Iterator
      * @return a boolean
      */
     @Override
-    public boolean hasNext() {
+    public boolean hasNext()
+    {
         return exercises.length != position + 1 && exercises[position + 1] != null;
     }
 
@@ -30,7 +31,8 @@ public class ExerciseIterator implements Iterator
      * @return the next element in the array
      */
     @Override
-    public Exercise next() {
+    public Exercise next()
+    {
         return hasNext() ? exercises[++position] : null;
     }
 }

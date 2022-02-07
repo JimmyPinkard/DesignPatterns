@@ -1,6 +1,8 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
+/**
+ * Class for a personal trainer
+ */
 public class PT
 {
     private final String firstName;
@@ -28,7 +30,7 @@ public class PT
      * @param muscleGroups
      * @param directions
      */
-    public void addExercise(String title, ArrayList<String> muscleGroups, ArrayList<String> directions)
+    public void addExercise(final String title, final ArrayList<String> muscleGroups, final ArrayList<String> directions)
     {
         if(isFull(this.exercises))
         {
@@ -56,21 +58,24 @@ public class PT
     /**
      * @return firstName
      */
-    public String getFirstName() {
+    public String getFirstName()
+    {
         return firstName;
     }
 
     /**
      * @return lastName
      */
-    public String getLastName() {
+    public String getLastName()
+    {
         return lastName;
     }
 
     /**
      * @return bio
      */
-    public String getBio() {
+    public String getBio()
+    {
         return bio;
     }
 
@@ -80,9 +85,7 @@ public class PT
     @Override
     public String toString()
     {
-        StringBuilder builder = new StringBuilder();
-        builder.append(firstName).append(' ').append(lastName).append('\n').append(bio).append("\n\n");
-        return builder.toString();
+        return firstName + ' ' + lastName + '\n' + bio + "\n\n";
     }
 
     //Utility functions
