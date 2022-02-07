@@ -1,17 +1,17 @@
 # DesignPatterns
 For CSCE 247 Software Engineering Spring 2022
 
-# Behavior
+## Behavior
 Changing behavior of an object during runtime
 
-# Observer
+## Observer
 Notifying every observer after a certain event happens
 
-# Decorator
+## Decorator
 Extending onto a base class
 
-# Factory
+## Factory
 Creating subclasses using a template
 
-# Iterator
+## Iterator
 Iterating through a collection in this case an array
