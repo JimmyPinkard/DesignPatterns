@@ -1,0 +1,36 @@
+Creating Our Music Box
+Starting up the Music Box
+Enter (E)nglish, (F)rench, (S)panish, (T)winkle, (H)appy, Or (Q)uit: t
+
+Playing: Twinkle Twinkle Little Star
+Twinkle twinkle little star
+How I wonder what you are
+Up above the world so high
+Like a dimond in the sky
+Twinkle twinkle little star
+How I wonder what you are
+
+Enter (E)nglish, (F)rench, (S)panish, (T)winkle, (H)appy, Or (Q)uit: F
+Switching to French
+Enter (E)nglish, (F)rench, (S)panish, (T)winkle, (H)appy, Or (Q)uit: H
+
+Playing: Si Tu as D' la Joie au Coeur
+Si tu as d' la joie au coeur, Frappe des mains
+Si tu as d' la joie au coeur, Frappe des mains
+Si tu as d' la joie au coeur, Frappe des mains
+Si tu as d' la joie au coeur, Frappe des mains
+
+Enter (E)nglish, (F)rench, (S)panish, (T)winkle, (H)appy, Or (Q)uit: S
+Switching to Spanish
+Enter (E)nglish, (F)rench, (S)panish, (T)winkle, (H)appy, Or (Q)uit: t
+
+Playing: Estrellita, ¿Dónde Estás?
+Estrellita, ¿dónde estás?
+Quiero verte cintilar
+En el cielo, sobre el mar.
+Un diamante de verdad.
+Estrellita, ¿dónde estás?
+Quiero verte cintilar.
+
+Enter (E)nglish, (F)rench, (S)panish, (T)winkle, (H)appy, Or (Q)uit: q
+Goodbye

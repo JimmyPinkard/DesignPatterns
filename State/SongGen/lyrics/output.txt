@@ -1,0 +1,36 @@
+	public void pressHappyButton() {
+		final java.util.List<String> lyrics = new java.util.ArrayList<>();
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Frappe des mains");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Frappe des mains");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Frappe des mains.");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Frappe du pied");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Frappe du pied");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Frappe du pied.");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Claque la langue");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Claque la langue");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Claque la langue");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Dis merci – merci");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Dis merci – merci");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Si tu as d' la joie au cœur");
+		lyrics.add("Dis merci – merci.");
+		box.playSong("Si tu as d' la joie au cœur", lyrics);
+	}
